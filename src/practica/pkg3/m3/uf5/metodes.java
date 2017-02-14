@@ -20,7 +20,7 @@ public class metodes {
         return comprovacio;
     }
 
-    public String[] metode2(String text) throws IPErroniaException {
+    public String[] metode2(String text){
         String[] cadena = new String[4];
         int cont = 0;
 
@@ -36,14 +36,12 @@ public class metodes {
     public boolean metode3(String IP) {
         boolean comprovacio = false;
 
-        try {
+       
             String[] cadenaIP;
             cadenaIP = metode2(IP);
-
             
-        } catch (IPErroniaException ex) {
 
-        }
+      
 
         return comprovacio;
     }
