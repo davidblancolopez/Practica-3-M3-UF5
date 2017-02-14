@@ -29,6 +29,7 @@ public class metodes {
                 cadena[i] = cadena[i] + text.charAt(cont);
                 cont ++;
             }
+            cont++;
         }
 
         return cadena;
