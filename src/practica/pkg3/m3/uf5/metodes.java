@@ -25,8 +25,9 @@ public class metodes {
         int cont = 0;
 
         for (int i = 0; i < cadena.length; i++) {
-            while (!(".").equals(text.charAt(cont + 1))) {
+            while ((".").equals(text.charAt(cont))) {
                 cadena[i] = cadena[i] + text.charAt(cont);
+                cont ++;
             }
         }
 
@@ -36,14 +37,12 @@ public class metodes {
     public boolean metode3(String IP) {
         boolean comprovacio = false;
 
-        try{
-            String[] cadenaIP;
-            cadenaIP = metode2(IP);
-            
-        }catch(IPErroniaException ex){
-            
+        String[] cadenaIP;
+        cadenaIP = metode2(IP);
+
+        for (int i = 0; i < cadenaIP.length; i++) {
+            comprovacio = metode1(cadenaIP[i], 0, 255);
         }
-      
 
         return comprovacio;
     }
