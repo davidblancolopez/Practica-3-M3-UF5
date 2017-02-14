@@ -20,14 +20,14 @@ public class metodes {
         return comprovacio;
     }
 
-    public String[] metode2(String text) throws IPErroniaException{
+    public String[] metode2(String text) throws IPErroniaException {
         String[] cadena = new String[4];
         int cont = 0;
 
         for (int i = 0; i < cadena.length; i++) {
             while ((".").equals(text.charAt(cont))) {
                 cadena[i] = cadena[i] + text.charAt(cont);
-                cont ++;
+                cont++;
             }
             cont++;
         }
@@ -38,14 +38,20 @@ public class metodes {
     public boolean metode3(String IP) throws IPErroniaException {
         boolean comprovacio = false;
 
-        String[] cadenaIP;
-        cadenaIP = metode2(IP);
+        try {
 
-        for (int i = 0; i < cadenaIP.length; i++) {
-            comprovacio = metode1(cadenaIP[i], 0, 255);
+            String[] cadenaIP;
+            cadenaIP = metode2(IP);
+
+            for (int i = 0; i < cadenaIP.length; i++) {
+                comprovacio = metode1(cadenaIP[i], 0, 255);
+            }
+
+        } catch (IPErroniaException ex) {
+
         }
 
         return comprovacio;
     }
-    
+
 }
