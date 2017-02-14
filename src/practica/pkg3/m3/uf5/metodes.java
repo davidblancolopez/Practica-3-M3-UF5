@@ -25,8 +25,19 @@ public class metodes {
     public String [] metode2(String text){
        String [] cadena = new String [4];
        
-       
+        for (int i = 0; i < text.length(); i++) {
+        text.charAt(i);
+        }
        
        return cadena;
+    }
+    
+    
+    public boolean metode3(String IP){
+        boolean comprovacio = false;
+        
+        
+        
+        return comprovacio;
     }
 }
