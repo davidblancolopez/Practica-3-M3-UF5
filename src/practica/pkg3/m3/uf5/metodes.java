@@ -9,35 +9,32 @@ public class metodes {
             int num = Integer.parseInt(text);
             if (num >= num1 && num <= num2) {
                 comprovacio = true;
-            }else{
+            } else {
                 comprovacio = false;
             }
-            
+
         } catch (Exception e) {
             System.out.println("No es numero");
         }
 
         return comprovacio;
     }
-    
-    
-    
-    public String [] metode2(String text){
-       String [] cadena = new String [4];
-       
-        for (int i = 0; i < text.length(); i++) {
-        text.charAt(i);
+
+    public String[] metode2(String text) {
+        String[] cadena = new String[4];
+        int cont = 0;
+
+        for (int i = 0; i < cadena.length; i++) {
+            while (!(".").equals(text.charAt(cont + 1))) {
+                cadena[i] = cadena[i] + text.charAt(cont);
+            }
         }
-       
-       return cadena;
+        return cadena;
     }
-    
-    
-    public boolean metode3(String IP){
+
+    public boolean metode3(String IP) {
         boolean comprovacio = false;
-        
-        
-        
+
         return comprovacio;
     }
 }
