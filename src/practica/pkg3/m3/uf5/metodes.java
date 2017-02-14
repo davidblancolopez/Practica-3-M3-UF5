@@ -45,6 +45,9 @@ public class metodes {
 
             for (int i = 0; i < cadenaIP.length; i++) {
                 comprovacio = metode1(cadenaIP[i], 0, 255);
+                if (comprovacio == false) {
+                    break;
+                }
             }
 
         } catch (IPErroniaException ex) {
