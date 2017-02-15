@@ -13,8 +13,8 @@ public class metodes {
                 comprovacio = false;
             }
 
-        } catch (Exception e) {
-            System.out.println("No es numero");
+        } catch (NumberFormatException ex) {
+            System.err.println("La cadena de text no és un numero " + ex.getMessage());
         }
 
         return comprovacio;
