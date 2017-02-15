@@ -21,18 +21,15 @@ public class metodes {
     }
 
     public String[] metode2(String text) throws IPErroniaException {
-        String[] cadena = new String[4];
-        int cont = 0;
-
-        for (int i = 0; i < cadena.length; i++) {
-            while ((".").equals(text.charAt(cont))) {
-                cadena[i] = cadena[i] + text.charAt(cont);
-                cont++;
-            }
-            cont++;
+        boolean comprovat;
+        if (text == null) {
+            throw new IPErroniaException("Una IP no pot estar buida");
         }
-
-        return cadena;
+        String[] partes = text.split("\\.");
+        if (partes.length != 4) {
+            throw new IPErroniaException("Ha de contenir 4 blocs");
+        }
+        return partes;
     }
 
     public boolean metode3(String IP) throws IPErroniaException {
