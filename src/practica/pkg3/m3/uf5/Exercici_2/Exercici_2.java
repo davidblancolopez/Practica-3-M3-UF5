@@ -91,8 +91,8 @@ public class Exercici_2 {
     /*
     
     Sense excepcions: Bloc 1 --> Bloc 2 --> Bloc 5
-    Amb excepció de tipus aritmètic: Bloc 1 --> Bloc 2 (peta)
-    Excepció d'un altre tipus diferent: Bloc 1 --> Bloc 2 (peta) --> Bloc 3
+    Amb excepció de tipus aritmètic: Bloc 1 --> Bloc 2 (peta) --> Bloc 3 --> Bloc 5
+    Excepció d'un altre tipus diferent: Bloc 1 --> Bloc 2 (peta) --> Bloc 3 --> Bloc 5
     
     */
     
@@ -116,7 +116,7 @@ public class Exercici_2 {
     
     Sense excepcions: Bloc 1 --> Bloc 2 --> Bloc 4 --> Bloc 5
     Amb excepció de tipus aritmètic: Bloc 1 --> Bloc 2 (peta) --> Bloc 3 --> Bloc 4 --> Bloc 5
-    Excepció d'un altre tipus diferent: Bloc 1 --> Bloc 2 (peta) 
+    Excepció d'un altre tipus diferent: Bloc 1 --> Bloc 2 (peta) --> Bloc 4 
 
     
     */
