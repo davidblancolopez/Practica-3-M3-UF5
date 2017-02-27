@@ -1,5 +1,5 @@
 
-package practica.pkg3.m3.uf5;
+package Exercici_1;
 
 
 public class Practica3M3UF5 {

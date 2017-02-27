@@ -1,4 +1,4 @@
-package practica.pkg3.m3.uf5;
+package Exercici_1;
 
 public class metodes {
 
